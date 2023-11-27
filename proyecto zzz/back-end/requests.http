@@ -1,0 +1,104 @@
+// Usuarios:
+
+### Crear usuario
+POST http://localhost:9000/api/createusers HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombres": "orlando",
+    "apellidos": "cristian",
+    "apodo": "cristian orlando",
+    "edad": 17
+}
+
+### Obtener todos los usuarios
+GET http://localhost:9000/api/users HTTP/1.1
+
+### Obtener un usuario específico
+GET http://localhost:9000/api/users/65431781622514699f180870 HTTP/1.1
+
+### Actualizar usuario específico (Reemplazar ID por el ID correcto)
+PUT http://localhost:9000/api/updateuser/65431781622514699f180870 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombres": "orlando",
+    "apellidos": "cristian",
+    "apodo": "cristian orlando",
+    "edad": 18
+}
+
+### Eliminar usuario específico (Reemplazar ID por el ID correcto)
+DELETE http://localhost:9000/api/deleteuser/6562ed4641a3a721cc4c4993 HTTP/1.1
+
+
+
+
+
+
+// Equipos:
+
+### Crear equipo
+POST http://localhost:9000/api/createteams HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "orlandooj",
+    "direccion": "cristianp",
+    "pagina": "cristiano orlando",
+    "correo": "19"
+}
+
+### Obtener todos los equipos
+GET http://localhost:9000/api/teams HTTP/1.1
+
+### Obtener un equipo específico
+GET http://localhost:9000/api/teams/656185462fb8aa62fec9bbc8 HTTP/1.1
+
+### Actualizar equipo específico (Reemplazar ID por el ID correcto)
+PUT http://localhost:9000/api/updateteam/6561871d3d748690df5fad36 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "orlando",
+    "direccion": "cristian",
+    "pagina": "cristian orlando",
+    "correo": "17"
+}
+
+### Eliminar equipo específico (Reemplazar ID por el ID correcto)
+DELETE http://localhost:9000/api/deleteteam/656185c42fb8aa62fec9bbcb HTTP/1.1
+
+
+
+
+// Estadios:
+
+### Crear estadio
+POST http://localhost:9000/api/createstadiums HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "santiago alonzo bernabeus",
+    "direccion": "alonzo houses",
+    "capacidad": 1000
+}
+
+### Obtener todos los estadios
+GET http://localhost:9000/api/stadiums HTTP/1.1
+
+### Obtener un estadio específico
+GET http://localhost:9000/api/stadiums/65618b08925acf49edf00cdf HTTP/1.1
+
+### Actualizar estadio específico (Reemplazar ID por el ID correcto)
+PUT http://localhost:9000/api/updatestadium/65618b08925acf49edf00cdf HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "santiago alonzo bernabeu",
+    "direccion": "alonzo house",
+    "capacidad": 1000
+}
+
+### Eliminar estadio específico (Reemplazar ID por el ID correcto)
+DELETE http://localhost:9000/api/deletestadium/65618b1e925acf49edf00ce1 HTTP/1.1
